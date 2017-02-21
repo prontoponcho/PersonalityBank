@@ -1,5 +1,6 @@
 <template name="Personalities">
-    {{#if $.Session.get 'addPersonality'}}
+   {{#if $.Session.get 'addPersonality'}}
+
         {{> NewPersonality}} {{else }}
         <button class="new-recipe">Add Personality</button>
     {{/if}}

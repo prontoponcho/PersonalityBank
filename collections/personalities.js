@@ -62,3 +62,9 @@ PersonalitySchema = new SimpleSchema({
 });
 
 Personalities.attachSchema(PersonalitySchema);
+
+Meteor.methods({
+    deletePersonality: function(id) {
+        Personalities.remove(id);
+    }
+});
