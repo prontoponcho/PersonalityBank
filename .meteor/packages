@@ -38,3 +38,4 @@ erasaur:meteor-lodash
 zimme:active-route
 gwendall:auth-client-callbacks
 check
+session
