@@ -25,16 +25,11 @@ Link = new SimpleSchema({
 PersonalitySchema = new SimpleSchema({
     name: {
         type: String,
-        label: 'Name'
+        label: 'Person\'s Name',
     },
     desc: {
         type: String,
-        label: 'Description'
-    },
-    attrs: {
-        optional: true,
-        type: [String],
-        label: 'Attributes'
+        label: 'Short Description',
     },
     links: {
         optional: true,
