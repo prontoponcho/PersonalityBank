@@ -1,9 +1,9 @@
 <template name="Personalities">
     {{#if $.Session.get 'addPersonality'}}
         {{> NewPersonality}} {{else }}
-        <button class="new-recipe">Add Personality</button>
+        <button class="new-personality"><i class="fa fa-plus-square"></i> Add Personality</button>
     {{/if}}
-    <section class='recipes'>
+    <section class='personalities'>
         {{#each personalities}}
             {{> Personality}}
         {{/each}}

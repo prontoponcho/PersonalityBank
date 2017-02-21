@@ -122,16 +122,14 @@ p
     margin-top 20px
     +above($med)
         lost-center 90%
-        padding-left $side-nav
     +above($large)
         lost-center 80%
         margin-top 40px
-        padding-left $side-nav-large
 
-.new-recipe
+.new-personality
     margin-bottom 20px
 
-.new-recipe-container
+.new-personality-container
     position relative
     background #FFF
     padding 20px
@@ -309,7 +307,7 @@ input, select, textarea
             &:hover, &.active
                 border-left 10px solid teal
 
-.recipe
+.personality
     background #FFF
     padding 0 20px 20px
     margin-bottom 20px
@@ -350,7 +348,7 @@ input, select, textarea
         right 40px
         &:hover
             color purp
-    .ingredient
+    .attribute
         display inline-block
         margin-right 10px
         font-size 1.2em
@@ -372,19 +370,8 @@ input, select, textarea
 
 
 .menu-item
-    @extend .recipe
+    @extend .personality
 
-.shopping-list
-    @extend .recipe
-    padding 50px 5%
-    list-style none
-    li
-        font-size 2em
-        padding 20px
-        border-bottom 1px solid light-grey
-        border-top 1px solid light-grey
-        & + li
-            border-top none
 
 .login-buttons-dropdown-align-
     #login-dropdown-list

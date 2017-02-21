@@ -1,11 +1,11 @@
 <template name="Personality">
-    <article class="recipe">
+    <article class="personality">
         <h3>{{name}}</h3>
         <p>{{desc}}</p>
         <p>{{mtbi}}</p>
         <p>
             {{#each attr in attrs}}
-                <span class='ingredient'>
+                <span class='attribute'>
                     {{attr}}
                 </span>
             {{/each}}
@@ -13,7 +13,7 @@
         <p>
             {{#each links}}
                 <span>
-                <a class='ingredient' href="{{url}}">
+                <a class='attribute' href="{{url}}">
                     {{name}}
                 </a>
                 </span>
