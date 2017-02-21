@@ -1,0 +1,12 @@
+<template name="Personalities">
+    {{#if $.Session.get 'addPersonality'}}
+        {{> NewPersonality}} {{else }}
+        <button class="new-recipe">Add Personality</button>
+    {{/if}}
+    <section class='recipes'>
+        <h3>Personalities.html</h3>
+        {{#each personalities}}
+            {{> Personality}}
+        {{/each}}
+    </section>
+</template>

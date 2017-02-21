@@ -1,0 +1,24 @@
+<template name="Personality">
+    <article class="recipe">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>{{mtbi}}</p>
+        <p>
+            {{#each attr in attrs}}
+                <span class='ingredient'>
+                    {{attr}}
+                </span>
+            {{/each}}
+        </p>
+        <p>
+            {{#each links}}
+                <span>
+                <a class='ingredient' href="{{url}}">
+                    {{name}}
+                </a>
+                </span>
+            {{/each}}
+        </p>
+        <i class="fa fa-trash"></i>
+    </article>
+</template>
