@@ -43,6 +43,7 @@ maroon = #6A2140
 light-red = #CA5765
 pink = #CF256D
 orange = #E8846B
+light-orange = #e2b7ac
 
 z = {
     neg: -7,
@@ -79,7 +80,7 @@ body
 
 header
     color #FFF
-    background: purp
+    background: orange
     padding 20px
     fixed top left
     width 100%
@@ -106,13 +107,15 @@ p
     margin-bottom 30px
 
 .billboard
-    background dark-purp
+    background light-orange
     color #FFF
     font-size 2em
     text-align center
     padding 60px
     h2
         margin 0
+    button
+        font-size 0.5em
 
 .main-layout
     lost-center 90%
@@ -163,9 +166,9 @@ p
         border-color @background
         shadow-level(2)
     &.btn-primary
-        background teal
-        border-color teal
-        color dark-purp
+        margin-top 40px
+        background purp
+        border-color purp
         &:hover
             background @background - 40
             border-color @background

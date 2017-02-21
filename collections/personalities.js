@@ -12,10 +12,13 @@ Personalities.allow({
 
 Link = new SimpleSchema({
     name: {
-        type: String
+        type: String,
+        label: 'Website Name'
     },
     url: {
-        type: String
+        type: String,
+        regEx: SimpleSchema.RegEx.Url,
+        label: 'URL'
     }
 });
 
@@ -29,12 +32,16 @@ PersonalitySchema = new SimpleSchema({
         label: 'Description'
     },
     attrs: {
-        type: [String]
+        optional: true,
+        type: [String],
+        label: 'Attributes'
     },
     links: {
-        type: [Link]
+        optional: true,
+        type: [Link],
     },
     mtbi: {
+        optional: true,
         type: String,
         label: 'Myers-Briggs Type Indicator'
     },
